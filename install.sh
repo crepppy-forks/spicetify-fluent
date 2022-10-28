@@ -21,7 +21,7 @@ else
 fi
 
 # Download latest master
-zipUri="https://github.com/williamckha/spicetify-fluent/archive/refs/heads/master.zip"
+zipUri="https://github.com/crepppy-forks/spicetify-fluent/archive/refs/heads/master.zip"
 zipSavePath="$themePath/fluent-master.zip"
 echo $zipUri
 echo $zipSavePath
