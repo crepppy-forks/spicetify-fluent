@@ -1697,7 +1697,7 @@ button.Vz6yjzttS0YlLcwrkoUR {
 .main-playPauseButton-button[aria-label="Play"],
 .main-trackList-rowPlayPauseButton[aria-label="Play"] {
   --button-size: 38px !important;
-  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_16_filled.svg') !important;
+  -webkit-mask-image: url('./fluentui-system-icons/ic_fluent_play_24_filled.svg') !important;
 }
 .main-playButton-button[aria-label="Pause"],
 .main-playButton-PlayButton[aria-label="Pause"],
