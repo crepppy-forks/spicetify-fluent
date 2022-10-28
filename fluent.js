@@ -126,28 +126,6 @@
     })
   }, 10);
 
-  waitForElement(
-    [
-      ".spotify__container--is-desktop",
-      ".main-navBar-entryPoints",
-      ".main-rootlist-rootlist",
-    ],
-    () => {
-      const navbarTopItems = document.querySelector(
-        ".spotify__container--is-desktop:not(.fullscreen) .main-navBar-entryPoints"
-      );
-      const navbarPlaylists = document.querySelector(".main-rootlist-rootlist");
-      navbarPlaylists.addEventListener("mouseover", () => {
-        navbarTopItems.style.height = "4.75em";
-        navbarTopItems.style.overflow = "hidden";
-      });
-      navbarPlaylists.addEventListener("mouseout", () => {
-        navbarTopItems.style.height = "";
-        navbarTopItems.style.overflow = "";
-      });
-    }
-  );
-
   // Playlist translateY recalculation
   // Still trying to figure out this as there's a big change from Spotify, help needed
   waitForElement([".JUa6JJNj7R_Y3i4P8YUX"], () => {
