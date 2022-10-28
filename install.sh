@@ -6,7 +6,7 @@ echo "Beginning installation of spicetify-fluent"
 echo "https://github.com/williamckha/spicetify-fluent"
 
 # Give time for user to cancel via CTRL+C
-#sleep 3s
+sleep 3s
 
 # Check if ~\.spicetify-cli\Themes\Fluent directory exists
 spicePath=$(dirname "$(spicetify -c)")
@@ -57,7 +57,6 @@ echo "+ Configured Fluent theme"
 # Patch the xpui.js for sidebar fixes
 # credit: https://github.com/JulienMaille/dribbblish-dynamic-theme/blob/main/install.sh
 configPath="$spicePath/config-xpui.ini"
-echo $configPath
 PATCH='[Patch]
 xpui.js_find_8008 = ,(\\w+=)32,
 xpui.js_repl_8008 = ,\${1}58,'
